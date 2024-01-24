@@ -1,5 +1,6 @@
 **Name Project: Travel Consumption**
 **Objective of this project:**
+
 - Create app project, travel consumption.
 - Use best practices in programming.
 - Identify the interface elements.
@@ -7,6 +8,7 @@
 - Perform application data validation.
 
 **What are we going to develop?**
+
 - Title Project. (Used TextView)
 - Total Kilometers. (Used TextEdit - Numbers)
 - Price per liter. (Used TextEdit - Numbers)
