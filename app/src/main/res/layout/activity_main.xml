@@ -6,6 +6,7 @@
     android:background="@android:color/white"
     tools:context=".MainActivity">
 
+    <!--  Top App  -->
     <View
         android:id="@+id/header_background"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:importantForAccessibility="no"
         android:src="@drawable/svg_title"
         tools:ignore="ImageContrastCheck" />
@@ -30,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp" />
 
+    <!--  Total Kilometer Form  -->
     <TextView
         android:id="@+id/text_total_kilometers"
         android:layout_width="match_parent"
@@ -66,6 +68,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/calculate" />
 
 </RelativeLayout>
