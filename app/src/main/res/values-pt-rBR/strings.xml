@@ -3,7 +3,7 @@
     <string name="app_name">Consumo de Viagem</string>
     <string name="total_kilometers">Total de Quilômetros</string>
     <string name="price_per_liter">Preço por Litro</string>
-    <string name="kilometer_per_liter">Quilômetro por Litro</string>
+    <string name="kilometer_per_liter">Quilômetros por Litro</string>
     <string name="total_cost">Custo Total</string>
     <string name="calculate">Calcular</string>
     <string name="zero_total_kilometers">0 km</string>
