@@ -1,38 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:padding="32dp"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-75dp"
+        android:background="@drawable/circle_background"
+        android:scaleX="1.6"
+        android:scaleY="1.6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/svg_title"
+        tools:ignore="ImageContrastCheck" />
+
+    <Space
+        android:id="@+id/distance_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
 
     <TextView
         android:id="@+id/text_total_kilometers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:fontFamily="@font/roboto_thin"
+        android:layout_below="@id/distance_top"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="90dp"
         android:text="@string/total_kilometers"
         android:textColor="#757575"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/edit_total_kilometers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/text_total_kilometers"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:background="@drawable/edittext_rounded_border"
-        android:fontFamily="@font/roboto_thin"
         android:hint="@string/zero_kilometers"
         android:inputType="number"
-        android:padding="12dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
         android:textColorHint="#757575"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,TextContrastCheck" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="32dp"
+        android:text="@string/calculate" />
 
-</LinearLayout>
+</RelativeLayout>
