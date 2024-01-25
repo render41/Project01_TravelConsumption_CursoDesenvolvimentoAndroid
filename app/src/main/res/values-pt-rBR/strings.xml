@@ -6,5 +6,8 @@
     <string name="kilometer_per_liter">Quilômetro por Litro</string>
     <string name="total_cost">Custo Total</string>
     <string name="calculate">Calcular</string>
-    <string name="zero_kilometers">0 km</string>
+    <string name="zero_total_kilometers">0 km</string>
+    <string name="price_zero">R$ 0,00</string>
+    <string name="zero_kilometer_per_liter">0 km</string>
+    <string name="zero_total_price">R$ 0,00</string>
 </resources>

@@ -20,8 +20,14 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:importantForAccessibility="no"
         android:src="@drawable/svg_title"
         tools:ignore="ImageContrastCheck" />
@@ -29,7 +35,7 @@
     <Space
         android:id="@+id/distance_top"
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="120dp" />
 
     <!--  Total Kilometer Form  -->
     <TextView
@@ -37,8 +43,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/distance_top"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/total_kilometers"
         android:textColor="#757575"
         android:textSize="16sp"
@@ -49,26 +59,168 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_total_kilometers"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:background="@drawable/edittext_rounded_border"
-        android:hint="@string/zero_kilometers"
+        android:hint="@string/zero_total_kilometers"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#757575"
+        tools:ignore="LabelFor,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <!--  Price per Liter Form  -->
+    <Space
+        android:id="@+id/distance_price_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edit_total_kilometers" />
+
+    <TextView
+        android:id="@+id/text_price_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_price_per_liter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/price_per_liter"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edit_price_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_price_per_liter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_border"
+        android:hint="@string/price_zero"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#757575"
+        tools:ignore="LabelFor,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <!--  Kilometer per Liter Form  -->
+    <Space
+        android:id="@+id/distance_kilometer_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edit_price_per_liter" />
+
+    <TextView
+        android:id="@+id/text_kilometer_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_kilometer_per_liter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/kilometer_per_liter"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edit_kilometer_per_liter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_kilometer_per_liter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_rounded_border"
+        android:hint="@string/zero_kilometer_per_liter"
         android:inputType="number"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textColorHint="#757575"
         tools:ignore="LabelFor,TextContrastCheck" />
 
+    <!--  Total Cost  -->
+    <Space
+        android:id="@+id/distance_total_cost"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/edit_kilometer_per_liter" />
+
+    <TextView
+        android:id="@+id/text_total_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_total_cost"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/total_cost"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        android:textSize="32sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_total_cost_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_total_cost"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/zero_total_price"
+        android:textAlignment="center"
+        android:textColor="@color/green_base"
+        android:textSize="62sp"
+        tools:ignore="TextContrastCheck" />
+
+    <!--  Button Calculate  -->
+    <Space
+        android:id="@+id/distance_button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_calculate"
+        android:layout_below="@+id/text_total_cost_price" />
+
     <Button
-        android:id="@+id/btnCalculate"
+        android:id="@+id/button_calculate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="32dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/calculate" />
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/calculate"
+        android:textColor="@color/white" />
+
 
 </RelativeLayout>
