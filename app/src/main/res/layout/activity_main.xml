@@ -220,7 +220,8 @@
         android:background="@drawable/rounded_button_background"
         android:fontFamily="@font/roboto_black"
         android:text="@string/calculate"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
 
 
 </RelativeLayout>
